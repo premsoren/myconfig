@@ -238,7 +238,8 @@ exec_always nitrogen --restore &
 #bindsym $mod+x exec /home/cinta/.config/scripts/lock
 bindsym $mod+shift+x exec betterlockscreen -l dim
 
-
+#Xfce4 Power Manager
+exec --no-startup-id xfce4-power-manager
 #Compositor
 exec_always picom -f &
 
