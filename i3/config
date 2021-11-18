@@ -59,7 +59,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -253,6 +253,9 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #Touchpad tap to click enable
 
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+
+#Low battery popup
+exec --no-startup-id i3-battery-popup
 
 #Shutdown,reboot, lock
 set $Locker betterlockscreen -l && sleep 1
