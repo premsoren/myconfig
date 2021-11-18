@@ -219,7 +219,7 @@ bindsym Print exec gnome-screenshot
 bar {
 	
 	font pango:FiraCode Nerd Font 9
-	position bottom
+	position top
 	status_command ~/.config/bumblebee-status/bumblebee-status \
 	        -m memory battery-upower date time pasink pasource brightness nic \
 		-p time.format="%H:%M:%S" date.format="%a,%d %b %Y" \
