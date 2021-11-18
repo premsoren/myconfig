@@ -209,10 +209,7 @@ bindsym $mod+Shift+z gaps outer current minus 5
 #enable floating Xtreme download manager 
 for_window [class="xdman-Main"] floating enable
 
-
-
 #Keybinding for file explorer
-
 bindsym $mod+shift+f exec "pcmanfm"
 
 #Take Screenshot
