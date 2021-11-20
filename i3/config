@@ -222,9 +222,9 @@ bar {
 	font pango:FiraCode Nerd Font 9
 	position top
 	status_command ~/.config/bumblebee-status/bumblebee-status \
-	        -m memory battery-upower date time pasink pasource brightness nic \
-		-p time.format="%H:%M:%S" date.format="%a,%d %b %Y" \
-	        -t iceberg-rainbow
+       -m memory battery-upower date time pasink pasource brightness nic \
+       -p time.format="%H:%M:%S" date.format="%a,%d %b %Y" \
+       -t iceberg-rainbow
 
 		
 }
@@ -281,3 +281,6 @@ bindsym $mod+Shift+d exec rofi -show drun -theme solarized -font "Fira Code 10" 
 #Floating dialogs
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
+
+#Polybar launch scripts
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
