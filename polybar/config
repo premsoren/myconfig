@@ -31,16 +31,17 @@ alert = #bd2c40
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 20
-;offset-x = 1%
-;offset-y = 30%
+;offset-x = 2%
+;offset-y = 2%
 radius = 0.0
 fixed-center = false
-
+bottom = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 0
 line-color = #f00
+
 
 border-size = 0
 border-color = #00000000
@@ -49,22 +50,26 @@ padding-left = 0
 padding-right = 1
 
 module-margin-left = 0
-module-margin-right = 2
+module-margin-right = 0
 
-font-0 = FiraCode Nerd Font:pixelsize=10;1
-
+font-0 = FiraCode Nerd Font:pixelsize=9;1
+enable-ipc = true
 modules-left = i3 xwindow
 modules-center = mpd
 modules-right =  memory xbacklight pulseaudio battery date eth wlan
+tray-position = none
+tray-padding = 2
 
-tray-position = right
-tray-padding = 0
+tray-detached = false
+tray-offset-x = 0
+tray-offest-y = 0
+tray-maxsize = 16
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
 wm-restack = i3
 
-;override-redirect = false
+override-redirect = false
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
@@ -74,11 +79,13 @@ wm-restack = i3
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
+separator = "|"
+separator-padding = 1
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
-
+label = %title%
+label-maxlen = 50
+label-foreground = #00C8B5  
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
@@ -183,6 +190,7 @@ type = internal/xbacklight
 
 format = <label>
 label =  %percentage%%
+label-foreground = #CE2492
 
 bar-width = 10
 bar-indicator = |
@@ -214,6 +222,7 @@ interval = 2
 format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
+format-foreground = #F5F800
 label =  %gb_used%/%gb_total%(%percentage_used%%)
 
 [module/wlan]
@@ -221,9 +230,10 @@ type = internal/network
 interface = wlo1
 interval = 3.0
 
-format-connected = <label-connected>
+format-connected =<label-connected>
 format-connected-underline = #9f78e1
 label-connected =  %essid%
+label-connected-foreground = #8DC701
 accumulate-stats = true
 
 format-disconnected =
@@ -247,7 +257,8 @@ interval = 3.0
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected =  Connected
+label-connected =  %local_ip%
+label-connected-foreground = #EC7063
 label_disconnected =  Disconnected
 accumulated_state = true
 format-disconnected = <label-disconnected>
@@ -269,19 +280,19 @@ time-alt = %H:%M:%S
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
-
-label = %date% %time%
+format-foreground = #BB4FB5
+label =  %date% %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <label-volume>
 label-volume =  %percentage%%
-label-volume-foreground = ${root.foreground}
+label-volume-foreground = #FF3F00
 
-label-muted = 
-label-muted-foreground = #fff
-
+label-muted =  Muted
+label-muted-foreground = #ff0000
+click-right = pavucontrol
 bar-volume-width = 2
 bar-volume-foreground-0 = #55aa55
 bar-volume-foreground-1 = #55aa55
@@ -332,7 +343,7 @@ type = internal/battery
 battery = BAT0
 adapter = ACAD
 full-at = 98
-
+format-foreground = #1EB003
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a
 
