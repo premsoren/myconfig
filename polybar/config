@@ -190,7 +190,7 @@ type = internal/xbacklight
 format = <label>
 label =  %percentage%%
 label-foreground = #CE2492
-
+enable-scroll = true
 bar-width = 10
 bar-indicator = |
 bar-indicator-foreground = #fff
