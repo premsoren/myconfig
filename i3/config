@@ -248,7 +248,7 @@ bindsym $mod+x exec /home/cinta/.config/scripts/lock
 #Xfce4 Power Manager
 exec --no-startup-id xfce4-power-manager
 #Compositor
-exec_always picom -f &
+exec_always picom -f 
 
 #Polkit Authentication agents
 #
