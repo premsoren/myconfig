@@ -242,8 +242,8 @@ bindsym --release Shift+Print exec --no-startup-id scrot -s
 exec_always nitrogen --restore &
 
 #Keybindings for lockscreen
-#bindsym $mod+x exec /home/cinta/.config/scripts/lock
-bindsym $mod+shift+x exec betterlockscreen -l dim
+bindsym $mod+x exec /home/cinta/.config/scripts/lock
+
 
 #Xfce4 Power Manager
 exec --no-startup-id xfce4-power-manager
@@ -264,7 +264,7 @@ exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 exec --no-startup-id i3-battery-popup
 
 #Shutdown,reboot, lock
-set $Locker betterlockscreen -l && sleep 1
+set $Locker i3lock && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
