@@ -2,10 +2,10 @@
 
 BLANK='#00000000'
 CLEAR='#ffffff22'
-DEFAULT='#ff00ffcc'
-TEXT='#ee00eeee'
-WRONG='#880000bb'
-VERIFYING='#bb00bbbb'
+DEFAULT='#bd93f9'
+TEXT='#f8f8f2'
+WRONG='#ff5555'
+VERIFYING='#50fa7b'
 
 /usr/bin/i3lock \
 --insidever-color=$CLEAR     \
