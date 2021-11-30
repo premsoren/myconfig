@@ -3,7 +3,7 @@
 BLANK='#00000000'
 CLEAR='#ffffff22'
 DEFAULT='#bd93f9'
-TEXT='#f8f8f2'
+TEXT='#ffb86c'
 WRONG='#ff5555'
 VERIFYING='#50fa7b'
 
