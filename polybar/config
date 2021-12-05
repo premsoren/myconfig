@@ -35,7 +35,7 @@ height = 20
 ;offset-y = 2%
 radius = 0.0
 fixed-center = false
-bottom = true
+bottom = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -84,7 +84,7 @@ separator = "|"
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
-label-foreground = #00C8B5  
+  
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
@@ -188,7 +188,6 @@ type = internal/xbacklight
 
 format = <label>
 label =  %percentage%%
-label-foreground = #E3B2B3
 enable-scroll = true
 bar-width = 10
 bar-indicator = |
@@ -220,7 +219,6 @@ interval = 2
 format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
-format-foreground = #F5F800
 label =  %gb_used%/%gb_total%(%percentage_used%%)
 
 [module/wlan]
@@ -231,7 +229,6 @@ interval = 3.0
 format-connected =<label-connected>
 format-connected-underline = #9f78e1
 label-connected =  %essid%
-label-connected-foreground = #8DC701
 accumulate-stats = true
 
 format-disconnected =
@@ -256,7 +253,6 @@ format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected =  %local_ip%
-label-connected-foreground = #C5FA9C
 label_disconnected =  Disconnected
 accumulated_state = true
 format-disconnected = <label-disconnected>
@@ -278,7 +274,6 @@ time-alt = %H:%M:%S
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
-format-foreground = #E7D2FF 
 label =  %date% %time%
 
 [module/pulseaudio]
@@ -286,7 +281,6 @@ type = internal/pulseaudio
 
 format-volume = <label-volume>
 label-volume =  %percentage%%
-label-volume-foreground = #B8EED3
 
 label-muted =  Muted
 label-muted-foreground = #ff0000
