@@ -247,7 +247,7 @@ bindsym $mod+x exec /home/cinta/.config/scripts/lock
 
 
 #Xfce4 Power Manager
-exec --no-startup-id xfce4-power-manager
+exec_always --no-startup-id xfce4-power-manager
 #Compositor
 exec_always picom -f 
 
