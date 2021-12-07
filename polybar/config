@@ -52,7 +52,7 @@ padding-right = 2
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = FiraCode Nerd Font:pixelsize=9;2
+font-0 = FiraCode Nerd Font:bold:antialias=true:size=9;2
 enable-ipc = true
 modules-left = i3 xwindow
 modules-center = mpd
@@ -354,7 +354,8 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = #01FF10
+ramp-capacity-0-foreground = #FF0000
+ramp-capacity-1-foreground = #FF7400
 
 
 animation-charging-0 = 
