@@ -221,9 +221,9 @@ bar {
 	font pango:FiraCode Nerd Font 9 
 	position bottom
 	status_command ~/.config/bumblebee-status/bumblebee-status \
-	     -m memory date time pasink pasource brightness battery-upower \
+	     -m memory date time pasink  brightness battery-upower \
    	     -p time.format="%H:%M:%S" date.format="%a,%d %b %Y" \
-   	     -t dracula-powerline
+   	     -t iceberg-rainbow
 
 }
 
