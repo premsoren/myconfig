@@ -57,7 +57,7 @@ enable-ipc = true
 modules-left = i3 xwindow
 modules-center = mpd
 modules-right =  memory xbacklight pulseaudio battery date eth wlan
-;tray-position = none
+;tray-position = right
 ;tray-padding = 2
 
 ;tray-detached = false
