@@ -223,7 +223,7 @@ label =  %gb_used%/%gb_total%(%percentage_used%%)
 
 [module/wlan]
 type = internal/network
-interface = wlo1
+interface = wlan0
 interval = 3.0
 
 format-connected =<label-connected>
