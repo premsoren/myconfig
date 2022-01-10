@@ -263,7 +263,7 @@ bindsym --release Shift+Print exec --no-startup-id scrot -s
 #xfce4-powermanager
 exec_always --no-startup-id xfce4-power-manager
 #polybar launch configuration
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #polkit
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #nitrogen wallpaper changer
