@@ -239,7 +239,7 @@ bindsym $mod+x exec /home/cinta/.config/scripts/lock
 #pcmanfm file explorer
 bindsym $mod+shift+f exec "pcmanfm"
 #Shutdown,reboot, lock
-set $Locker /home/cinta/.config/scripts/lock
+set $Locker /home/cinta/.config/scripts/lock && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
