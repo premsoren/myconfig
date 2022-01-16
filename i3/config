@@ -279,5 +279,5 @@ exec --no-startup-id  xdman
 #-------------------------------------------
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
-for_window [class="Pavucontrol|Android Emulator*|xdman-Main|Lxappearance|Xfce4-power-manager-settings|Tor Browser"] floating enable
-
+for_window [class="Pavucontrol|xdman-Main|Lxappearance|Xfce4-power-manager-settings|Tor Browser"] floating enable
+for_window [title="Android Virtual Device Manager"] floating enable
