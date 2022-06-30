@@ -222,8 +222,8 @@ bindsym $mod+Shift+z gaps outer current minus 5
 #	position bottom
 #	status_command ~/.config/bumblebee-status/bumblebee-status \
 #	     -m memory pasink brightness battery-upower date time \
- # 	     -p time.format="%H:%M:%S" date.format="%a,%d %b %Y" \
-  #	     -t iceberg-rainbow
+#	     -p time.format="%H:%M:%S" date.format="%a,%d %b %Y" \
+#	     -t iceberg-rainbow
 
 #}
 
