@@ -35,7 +35,7 @@ height = 20
 ;offset-y = 2%
 radius = 0.0
 fixed-center = false
-bottom = false
+bottom = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -56,9 +56,9 @@ font-0 = FiraCode Nerd Font:bold:antialias=true:size=9;2
 enable-ipc = true
 modules-left = i3 xwindow
 modules-center = mpd
-modules-right =  memory xbacklight pulseaudio battery date eth wlan
-;tray-position = right
-;tray-padding = 2
+modules-right =  memory xbacklight pulseaudio battery date
+tray-position = right
+tray-padding = 2
 
 ;tray-detached = false
 ;tray-offset-x = 0
